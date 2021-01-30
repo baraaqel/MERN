@@ -1,0 +1,16 @@
+Try installing it globally first, using the command
+
+
+npm install -g create-react-app
+
+
+
+
+**********************************************
+
+
+And then, you can create your app using the command,
+
+
+
+npx create-react-app <Name of your app>

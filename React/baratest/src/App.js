@@ -1,19 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
+import FirstAssi from './components/FirstAssi'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-      <h1>Hello Dojo!</h1>
-          <h2>Things I need to do:</h2>
-          <ul>
-            <li>Learn React</li>
-            <li>Climb Mt.Everest</li>
-            <li>Run a Marathon</li>
-            <li>feed the dogs</li>
-          </ul> 
-      </header>
+      <FirstAssi firstName={"bara"} scondName={"aqel"} age={"Age : 45"} hair={"Hair color : red"}/>
+      <FirstAssi firstName={"yaman"} scondName={"aqel"} age={"Age : 15"} hair={"Hair color : green"}/>
+      <FirstAssi firstName={"mohammed"} scondName={"aqel"} age={"Age : 25"} hair={"Hair color : yellow"}/>
+      <FirstAssi firstName={"ishaq"} scondName={"aqel"} age={"Age : 10"} hair={"Hair color : black  "}/>
+      
     </div>
   );
 }
