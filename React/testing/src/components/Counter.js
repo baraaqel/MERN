@@ -1,26 +1,34 @@
-import React, { Component } from 'react';
+import React, { useState } from  'react';
     
     
-class Counter extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            clickCount: 0
-        }
-    }
- 
-    handleClick = () => this.setState({
-        clickCount: this.state.clickCount + 1
-    })
+const Counter = (props) => {
+    const [username, setUsername] = useState("");
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState(""); 
+    const newUser = { username, email, password };    
+    const createUser = (e) => {
+        e.preventDefault();
+        const newUser = { username, email, password };
+        console.log("Welcome", newUser);
+    };
     
-    render() {
-        return (
+    return(
+        <form onSubmit={ createUser }>
             <div>
-                { this.state.clickCount }
-                <button onClick={ this.handleClick }>Click Me</button>
+                <label>Username: </label> 
+                <input type="text" onChange={ (e) => setUsername(e.target.value) } />
             </div>
-        );
-    }
-}
+            <div>
+                <label>Email Address: </label> 
+                <input type="text" onChange={ (e) => setEmail(e.target.value) } />
+            </div>
+            <div>
+                <label>Password: </label>
+                <input type="text" onChange={ (e) => setPassword(e.target.value) } />
+            </div>
+            <input type="submit" value="Create User" />
+        </form>
+    );
+};
     
 export default Counter;
