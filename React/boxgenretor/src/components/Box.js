@@ -7,8 +7,8 @@ const Box = (props) => {
         background: props.newColor,
         display: 'inline-block',
         margin: '10px',
-        border: '1px solid white',
-        borderRadius: "100%"
+        border: '5px solid black',
+        borderRadius: "0"
     }
     return (
         <div style={boxStyle}></div>
