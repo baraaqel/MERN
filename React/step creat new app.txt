@@ -13,4 +13,4 @@ And then, you can create your app using the command,
 
 
 
-npx create-react-app <Name of your app>
+  <Name of your app>
